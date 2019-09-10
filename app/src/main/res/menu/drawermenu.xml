@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home" android:title="Home" android:icon="@drawable/ic_home_black_24dp"/>
+    <item android:id="@+id/tecs_news" android:title="Tech News" android:icon="@drawable/ic_new_releases_black_24dp"/>
+    <item android:id="@+id/tipstrik" android:title="Tips dan trik" android:icon="@drawable/ic_filter_tilt_shift_black_24dp"/>
+    <item android:id="@+id/gadget" android:title="Gadget" android:icon="@drawable/ic_stay_current_portrait_black_24dp"/>
+    <item android:id="@+id/game" android:title="Game" android:icon="@drawable/ic_videogame_asset_black_24dp"/>
+    <item android:id="@+id/apps" android:title="Apps" android:icon="@drawable/ic_apps_black_24dp"/>
+    <item android:id="@+id/robotik" android:title="Robotik" android:icon="@drawable/ic_adb_black_24dp"/>
+    <item android:id="@+id/internet" android:title="Internet" android:icon="@drawable/ic_language_black_24dp"/>
+    <item android:id="@+id/about" android:title="About" android:icon="@drawable/ic_info_outline_black_24dp"></item>
+</menu>

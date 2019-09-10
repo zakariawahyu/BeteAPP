@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerabout"
+    tools:context=".Main2Activity">
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorWhite"
+        app:itemIconTint="@color/colorPrimaryDark"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/drawermenu"
+        app:headerLayout="@layout/header">
+
+
+    </android.support.design.widget.NavigationView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="44dp"
+            android:text="About Team"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_zakaria"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/zakaria"
+            app:civ_border_color="#000000"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/tvzaka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_zakaria"
+            android:layout_marginTop="10dp"
+            android:text="Zakaria Wahyu Nur Utomo \n Programmer"
+            android:textAlignment="center" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_elsa"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/tvzaka"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/elsa"
+            app:civ_border_color="#000000"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_elsa"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:text="Elsa Jelista Sari \n Dokumtasi" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_aldi"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/aldi"
+            app:civ_border_color="#000000"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_aldi"
+            android:layout_marginTop="10dp"
+            android:text="Rinaldi Jasmi \n Designer"
+            android:textAlignment="center" />
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</android.support.v4.widget.DrawerLayout>

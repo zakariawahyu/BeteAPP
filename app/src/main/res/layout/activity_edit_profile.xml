@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main_backgorund"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.EditProfile">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="114dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+    <TextView
+        android:id="@+id/tv_namaprofille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Edit Profile"
+        android:textColor="@color/login_form_details"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/namalengkapku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Nama"
+        android:textColor="@color/login_form_details"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_namaprofille" />
+
+    <TextView
+        android:id="@+id/tv_usernameku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Username"
+        android:textColor="@color/login_form_details"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namalengkapku" />
+
+    <EditText
+        android:id="@+id/et_namalengkap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_bg"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintBottom_toBottomOf="@+id/namalengkapku"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="@+id/namalengkapku" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_bg"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_usernameku"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_usernameku" />
+
+    <Button
+        android:id="@+id/btn_selectimage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:text="SELECT IMAGE"
+        android:textAllCaps="false"
+        android:textColor="@color/login_form_details_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_fotoprofile"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toTopOf="@+id/tv_fotoprofile" />
+
+        <Button
+            android:id="@+id/btn_editnow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_bg"
+            android:text="EDIT"
+            android:textAllCaps="false"
+            android:textColor="@color/login_form_details_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/show_foto"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_fotoprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="55dp"
+        android:text="Foto profile"
+        android:textColor="@color/login_form_details"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usernameku" />
+
+    <ImageView
+        android:id="@+id/show_foto"
+        android:layout_width="309dp"
+        android:layout_height="270dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_selectimage" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabfragment.ProfileFragment" >
+
+    <RelativeLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_selamatdatang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_profile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:text="Selamat datang"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:civ_border_color="#000000"
+            app:civ_border_width="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/main_backgorund" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buat_berita"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/colorPrimary"
+            android:text="LOG OUT"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btn_edit_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_username"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/colorPrimary"
+            android:text="Edit Profile"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/buat_berita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_edit_profile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/colorPrimary"
+            android:text="BUAT BERITA"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_selamatdatang"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/emptyprofile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:ignoreGravity="@drawable/workerrunning"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="129dp">
+
+        <ImageView
+            android:id="@+id/imageemptyforum"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/workerrunning" />
+
+        <TextView
+            android:id="@+id/tvEmptyForum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageemptyforum"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:text="Tidak Memiliki Akses"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emptytextforum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEmptyForum"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:text="Mohon maaf, anda tidak memiliki akses atas halaman ini"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/loginprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emptytextforum"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/colorPrimary"
+            android:text="LOGIN"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

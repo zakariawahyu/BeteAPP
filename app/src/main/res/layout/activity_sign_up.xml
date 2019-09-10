@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main_backgorund"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.Signup">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+
+    <TextView
+        android:id="@+id/createaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        android:text="Crated an Account"
+        android:textColor="@color/login_form_details"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordsignup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et_bg"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/usernamesignup" />
+
+    <EditText
+        android:id="@+id/usernamesignup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et_bg"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/namalengkap" />
+
+    <EditText
+        android:id="@+id/namalengkap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et_bg"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/createaccount" />
+
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et_bg"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/login_form_details"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/passwordsignup" />
+
+    <Button
+        android:id="@+id/btn_signupnow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_bg"
+        android:text="SIGN UP NOW"
+        android:textAllCaps="false"
+        android:textColor="@color/login_form_details_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline_left"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="By creating an account you agree to our Terms of Service and Privacy Policy"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmpassword" />
+
+</android.support.constraint.ConstraintLayout>
