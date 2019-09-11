@@ -55,11 +55,11 @@ public class BuatBeritaTest {
 
     }
 
+
     @Test
     public void pilihfotoberita(){
         onView(withId(R.id.btn_selectimageberita)).check(matches(isDisplayed()));
         onView(withId(R.id.btn_selectimageberita)).perform(click());
-
     }
 
     @Test
