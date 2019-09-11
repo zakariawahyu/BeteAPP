@@ -76,7 +76,7 @@
 
 
         <Button
-            android:id="@+id/btn_buatberita"
+            android:id="@+id/btn_buatberitaku"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"

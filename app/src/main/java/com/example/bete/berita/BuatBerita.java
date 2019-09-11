@@ -62,7 +62,7 @@ public class BuatBerita extends AppCompatActivity {
         et_judul = findViewById(R.id.et_judulberita);
         et_isi = findViewById(R.id.et_isiberita);
         kategori = findViewById(R.id.spinner_buatberita);
-        buatberita = findViewById(R.id.btn_buatberita);
+        buatberita = findViewById(R.id.btn_buatberitaku);
         imageViewberita = findViewById(R.id.show_fotoberita);
         pilihgambar = findViewById(R.id.btn_selectimageberita);
 
@@ -76,6 +76,9 @@ public class BuatBerita extends AppCompatActivity {
                 AddBerita();
             }
         });
+
+
+
 
         pilihgambar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,6 +94,7 @@ public class BuatBerita extends AppCompatActivity {
         });
 
     }
+
 
     private void reset(){
         et_isi.setText("");
